@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header class="header">
+  <div class="logo">
+  <img src="logo1.png" alt="Healthcare Plus Logo" class="logo-img">
+  <span>Healthcare Pluse</span>
+</div>
+
+  <nav class="nav">
+    <a href="Homepage.html"><strong>Home</strong></a>
+    <a href="#about"><strong>About</strong></a>
+    <a href="#services"><strong>Services</strong></a>
+    <a href="support.html" class="btn-support"><strong>Support</strong></a>
+  </nav>
+</header>
+  </div>
+<div class="forcolor">
+   <h1>🏥 CareConnect - Healthcare Support</h1>
+   
+  <div class="container">
+    <h2>Patient / Volunteer Registration</h2>
+
+    <form  id="supportForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="number" id="num" placeholder="Phone Number" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <select  id="gen">
+        <option value="geder">Male</option>
+        <option value="geder">FeMale</option>
+        <option value="geder">Other</option>
+      </select>
+
+      <select  id="role">
+        
+        <option value="Patient">Patient</option>
+
+        <option value="Volunteer">Volunteer</option>
+      </select>
+
+      <textarea id="message" placeholder="Your message or help needed..." required ></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="result"></p>
+    </div>
+  </div>
+<!-- CHATBOT BUTTON -->
+<div class="chatbot-btn" onclick="toggleChatbot()">💬</div>
+
+<!-- CHATBOT BOX -->
+<div id="chatbot" class="chatbot-box">
+  <div class="chatbot-header">AI Support Bot</div>
+  <div id="chatbox" class="chatbox">
+    <div class="bot">Hi! I’m your support assistant. How can I help?</div>
+  </div>
+  <input type="text" id="userInput" placeholder="Type your message..." />
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+  <script src="JScript.js"></script>
+  <footer id="contact" class="footer">
+  <p>📧 support@healthcareplus.com | 📞 +91 9876543210</p>
+  <p>© 2026 HealthCare Plus Hospital</p>
+</footer>
+</body>
+</html>
